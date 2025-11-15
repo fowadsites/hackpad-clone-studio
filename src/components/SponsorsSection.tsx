@@ -1,20 +1,31 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import codecraftersLogo from "@/assets/sponsors/codecrafters-logo.png";
+import stackupLogo from "@/assets/sponsors/stackup-logo.png";
+import xyzLogo from "@/assets/sponsors/xyz-logo.png";
+import balsamiqLogo from "@/assets/sponsors/balsamiq-logo.png";
+import aopsLogo from "@/assets/sponsors/aops-logo.png";
+import nordvpnLogo from "@/assets/sponsors/nordvpn-logo.png";
+import sailyLogo from "@/assets/sponsors/saily-logo.png";
+import incogniLogo from "@/assets/sponsors/incogni-logo.png";
+import nordprotectLogo from "@/assets/sponsors/nordprotect-logo.png";
+import nexosLogo from "@/assets/sponsors/nexos-logo.png";
+import nordpassLogo from "@/assets/sponsors/nordpass-logo.png";
 
 const SponsorsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const sponsors = [
-    "CodeCrafters.io",
-    "Stackup",
-    ".xyz",
-    "Balsamiq",
-    "AoPS",
-    "NordVPN",
-    "Saily",
-    "Incogni",
-    "NordProtect",
-    "Nexos.ai",
-    "NordPass",
+    { name: "CodeCrafters.io", logo: codecraftersLogo },
+    { name: "Stackup", logo: stackupLogo },
+    { name: ".xyz", logo: xyzLogo },
+    { name: "Balsamiq", logo: balsamiqLogo },
+    { name: "AoPS", logo: aopsLogo },
+    { name: "NordVPN", logo: nordvpnLogo },
+    { name: "Saily", logo: sailyLogo },
+    { name: "Incogni", logo: incogniLogo },
+    { name: "NordProtect", logo: nordprotectLogo },
+    { name: "Nexos.ai", logo: nexosLogo },
+    { name: "NordPass", logo: nordpassLogo },
   ];
 
   return (
@@ -44,11 +55,13 @@ const SponsorsSection = () => {
           {sponsors.map((sponsor, index) => (
             <div
               key={index}
-              className="bg-foreground rounded-2xl p-6 flex items-center justify-center aspect-square hover:scale-105 transition-transform shadow-lg border-2 border-primary"
+              className="bg-card rounded-2xl p-6 flex items-center justify-center aspect-square hover:scale-105 transition-transform shadow-lg border-2 border-border"
             >
-              <span className="text-background font-bold text-xl text-center">
-                {sponsor}
-              </span>
+              <img 
+                src={sponsor.logo} 
+                alt={sponsor.name}
+                className="w-full h-full object-contain"
+              />
             </div>
           ))}
         </div>

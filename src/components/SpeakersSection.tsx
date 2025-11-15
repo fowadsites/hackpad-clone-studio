@@ -1,10 +1,24 @@
 import { Button } from "@/components/ui/button";
-import { User } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import judge1 from "@/assets/judges/judge1.jpg";
+import judge2 from "@/assets/judges/judge2.jpg";
+import judge3 from "@/assets/judges/judge3.jpg";
+import judge4 from "@/assets/judges/judge4.jpg";
+import judge5 from "@/assets/judges/judge5.jpg";
+import judge6 from "@/assets/judges/judge6.jpg";
+import judge7 from "@/assets/judges/judge7.jpg";
 
 const SpeakersSection = () => {
   const { ref, isVisible } = useScrollAnimation();
-  const speakers = Array(6).fill(null);
+  const judges = [
+    { image: judge1, name: "Judge 1" },
+    { image: judge2, name: "Judge 2" },
+    { image: judge3, name: "Judge 3" },
+    { image: judge4, name: "Judge 4" },
+    { image: judge5, name: "Judge 5" },
+    { image: judge6, name: "Judge 6" },
+    { image: judge7, name: "Judge 7" },
+  ];
 
   return (
     <section 
@@ -30,13 +44,17 @@ const SpeakersSection = () => {
           More insane lineup coming soon 🔥
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-12">
-          {speakers.map((_, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
+          {judges.map((judge, index) => (
             <div
               key={index}
-              className="aspect-square bg-card border-4 border-primary rounded-3xl flex items-center justify-center hover:scale-105 transition-transform shadow-lg"
+              className="aspect-square bg-card border-4 border-primary rounded-3xl overflow-hidden hover:scale-105 transition-transform shadow-lg"
             >
-              <User className="w-24 h-24 text-muted-foreground" />
+              <img 
+                src={judge.image} 
+                alt={judge.name}
+                className="w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>
