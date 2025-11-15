@@ -10,6 +10,7 @@ import RulesSection from "@/components/RulesSection";
 import CommunitySection from "@/components/CommunitySection";
 import DetailsSection from "@/components/DetailsSection";
 import ScrollNavigation from "@/components/ScrollNavigation";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -26,6 +27,7 @@ const Index = () => {
       <RulesSection />
       <CommunitySection />
       <DetailsSection />
+      <Footer />
     </div>
   );
 };

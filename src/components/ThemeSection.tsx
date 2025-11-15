@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import CTAButtons from "./CTAButtons";
 
 const ThemeSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -26,28 +26,7 @@ const ThemeSection = () => {
         <p className="text-2xl md:text-3xl leading-relaxed mb-12 text-primary pixel-text font-bold">
           MAKE TOOLS THAT HELP ___; MORE SPECIFICS BEFORE HACKING STARTS 🤫!
         </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-          >
-            Register
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-          >
-            Discord
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-          >
-            Sponsor
-          </Button>
-        </div>
+        <CTAButtons />
       </div>
     </section>
   );

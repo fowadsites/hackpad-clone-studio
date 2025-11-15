@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
+import CTAButtons from "./CTAButtons";
 
 const HeroSection = () => {
   return (
@@ -55,27 +56,8 @@ const HeroSection = () => {
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-wrap gap-4 justify-center mt-12">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-          >
-            Register
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-          >
-            Discord
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-          >
-            Sponsor
-          </Button>
+        <div className="mt-12">
+          <CTAButtons />
         </div>
       </div>
     </section>
