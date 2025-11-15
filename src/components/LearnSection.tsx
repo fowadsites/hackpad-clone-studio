@@ -1,6 +1,7 @@
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Lightbulb, FileText, Presentation, Sparkles } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import CTAButtons from "./CTAButtons";
+import { Button } from "@/components/ui/button";
 
 const LearnSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -76,28 +77,7 @@ const LearnSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-          >
-            Register
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-          >
-            Discord
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-          >
-            Sponsor
-          </Button>
-        </div>
+        <CTAButtons />
       </div>
     </section>
   );

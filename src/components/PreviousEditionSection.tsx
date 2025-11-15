@@ -1,9 +1,9 @@
-import { Button } from "@/components/ui/button";
 import { Trophy, DollarSign, Users, Award } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import amdLogo from "@/assets/logos/amd-logo.png";
 import googleLogo from "@/assets/logos/google-logo.png";
 import teslaLogo from "@/assets/logos/tesla-logo.png";
+import CTAButtons from "./CTAButtons";
 
 const PreviousEditionSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -110,28 +110,7 @@ const PreviousEditionSection = () => {
           <p className="text-xl text-primary pixel-text font-bold mb-8">
             JOIN US FOR AN EVEN BIGGER EVENT IN 2026! 🚀
           </p>
-          <div className="flex flex-wrap gap-4 justify-center">
-            <Button 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-            >
-              Register
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-            >
-              Discord
-            </Button>
-            <Button 
-              size="lg" 
-              variant="outline"
-              className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-            >
-              Sponsor
-            </Button>
-          </div>
+          <CTAButtons />
         </div>
       </div>
     </section>

@@ -1,5 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import CTAButtons from "./CTAButtons";
 
 const VisionSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -28,28 +28,7 @@ const VisionSection = () => {
           EXACTLY THE POINT. WE WANT YOUR FIRST INNOVATIVE EXPERIENCE TO BE THE BEST ONE 💙!
           EVEN IF YOU'RE A SEASONED BUILDER, THERE'S LITERALLY NOTHING TO LOSE AND A LOT TO WIN!
         </p>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-          >
-            Register
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-          >
-            Discord
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-          >
-            Sponsor
-          </Button>
-        </div>
+        <CTAButtons />
       </div>
     </section>
   );

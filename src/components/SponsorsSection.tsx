@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
 import githubEducationLogo from "@/assets/sponsors/github-education.png";
 import aopsLogo from "@/assets/sponsors/aops.png";
@@ -10,6 +9,7 @@ import codecraftersLogo from "@/assets/sponsors/codecrafters.png";
 import unibeeLogo from "@/assets/sponsors/unibee.png";
 import xyzLogo from "@/assets/sponsors/xyz.png";
 import givemycertificateLogo from "@/assets/sponsors/givemycertificate.jpg";
+import CTAButtons from "./CTAButtons";
 
 const SponsorsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -64,28 +64,7 @@ const SponsorsSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap gap-4 justify-center">
-          <Button 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold pixel-text shadow-lg"
-          >
-            Register
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-primary text-primary hover:bg-primary/10 font-bold pixel-text"
-          >
-            Discord
-          </Button>
-          <Button 
-            size="lg" 
-            variant="outline"
-            className="border-2 border-secondary text-secondary hover:bg-secondary/10 font-bold pixel-text"
-          >
-            Sponsor
-          </Button>
-        </div>
+        <CTAButtons />
       </div>
     </section>
   );
