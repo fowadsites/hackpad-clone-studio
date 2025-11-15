@@ -1,9 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
-import amdLogo from "@/assets/logos/amd-logo.png";
-import googleLogo from "@/assets/logos/google-logo.png";
-import teslaLogo from "@/assets/logos/tesla-logo.png";
 
 const HeroSection = () => {
   return (
@@ -54,19 +51,6 @@ const HeroSection = () => {
             <span className="text-primary font-bold">Sponsor</span>
             <span>•</span>
             <span>No/low/all-code</span>
-          </div>
-        </div>
-
-        {/* Partner Logos */}
-        <div className="flex items-center justify-center gap-8 mb-8 flex-wrap">
-          <div className="bg-card rounded-xl p-4 border-2 border-border hover:scale-105 transition-transform">
-            <img src={amdLogo} alt="AMD" className="h-12 object-contain" />
-          </div>
-          <div className="bg-card rounded-xl p-4 border-2 border-border hover:scale-105 transition-transform">
-            <img src={googleLogo} alt="Google" className="h-12 object-contain" />
-          </div>
-          <div className="bg-card rounded-xl p-4 border-2 border-border hover:scale-105 transition-transform">
-            <img src={teslaLogo} alt="Tesla" className="h-12 object-contain" />
           </div>
         </div>
 
