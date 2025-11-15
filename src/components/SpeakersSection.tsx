@@ -7,32 +7,47 @@ import judge5 from "@/assets/judges/judge5.jpg";
 import judge6 from "@/assets/judges/judge6.jpg";
 import judge7 from "@/assets/judges/judge7.jpg";
 import CTAButtons from "./CTAButtons";
-
 const SpeakersSection = () => {
-  const { ref, isVisible } = useScrollAnimation();
-  const judges = [
-    { image: judge1, name: "Judge 1" },
-    { image: judge2, name: "Judge 2" },
-    { image: judge3, name: "Judge 3" },
-    { image: judge4, name: "Judge 4" },
-    { image: judge5, name: "Judge 5" },
-    { image: judge6, name: "Judge 6" },
-    { image: judge7, name: "Judge 7" },
-  ];
-
-  return (
-    <section 
-      id="speakers" 
-      ref={ref}
-      className={`min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden transition-all duration-700 ${
-        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-      }`}
-    >
+  const {
+    ref,
+    isVisible
+  } = useScrollAnimation();
+  const judges = [{
+    image: judge1,
+    name: "Judge 1"
+  }, {
+    image: judge2,
+    name: "Judge 2"
+  }, {
+    image: judge3,
+    name: "Judge 3"
+  }, {
+    image: judge4,
+    name: "Judge 4"
+  }, {
+    image: judge5,
+    name: "Judge 5"
+  }, {
+    image: judge6,
+    name: "Judge 6"
+  }, {
+    image: judge7,
+    name: "Judge 7"
+  }];
+  return <section id="speakers" ref={ref} className={`min-h-screen flex items-center justify-center px-4 py-20 relative overflow-hidden transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
       {/* Microphone Pattern Background */}
       <div className="absolute inset-0 pointer-events-none opacity-20">
-        <div className="absolute top-10 left-1/4 w-20 h-20 border-4 border-primary rounded-full animate-ping" style={{ animationDuration: '3s' }}></div>
-        <div className="absolute top-1/3 right-1/4 w-16 h-16 border-4 border-secondary rounded-full animate-ping" style={{ animationDuration: '4s', animationDelay: '1s' }}></div>
-        <div className="absolute bottom-20 left-1/3 w-24 h-24 border-4 border-primary rounded-full animate-ping" style={{ animationDuration: '5s', animationDelay: '2s' }}></div>
+        <div className="absolute top-10 left-1/4 w-20 h-20 border-4 border-primary rounded-full animate-ping" style={{
+        animationDuration: '3s'
+      }}></div>
+        <div className="absolute top-1/3 right-1/4 w-16 h-16 border-4 border-secondary rounded-full animate-ping" style={{
+        animationDuration: '4s',
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute bottom-20 left-1/3 w-24 h-24 border-4 border-primary rounded-full animate-ping" style={{
+        animationDuration: '5s',
+        animationDelay: '2s'
+      }}></div>
         <div className="absolute top-1/2 left-10 w-72 h-72 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-10 w-64 h-64 bg-gradient-to-tl from-secondary/10 to-transparent rounded-full blur-3xl"></div>
       </div>
@@ -45,24 +60,13 @@ const SpeakersSection = () => {
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-          {judges.map((judge, index) => (
-            <div
-              key={index}
-              className="aspect-square bg-card border-4 border-primary rounded-3xl overflow-hidden hover:scale-105 transition-transform shadow-lg"
-            >
-              <img 
-                src={judge.image} 
-                alt={judge.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
-          ))}
+          {judges.map((judge, index) => <div key={index} className="aspect-square bg-card border-4 border-primary rounded-3xl overflow-hidden hover:scale-105 transition-transform shadow-lg">
+              <img src={judge.image} alt={judge.name} className="w-full h-full object-cover" />
+            </div>)}
         </div>
 
-        <CTAButtons />
+        
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default SpeakersSection;
