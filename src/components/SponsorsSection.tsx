@@ -3,7 +3,7 @@ import githubEducationLogo from "@/assets/sponsors/github-education.png";
 import aopsLogo from "@/assets/sponsors/aops.png";
 import balsamiqLogo from "@/assets/sponsors/balsamiq.png";
 import interviewCakeLogo from "@/assets/sponsors/interview-cake.png";
-import hcbLogo from "@/assets/sponsors/hcb.png";
+
 import jukeboxLogo from "@/assets/sponsors/jukebox.png";
 import codecraftersLogo from "@/assets/sponsors/codecrafters.png";
 import unibeeLogo from "@/assets/sponsors/unibee.png";
@@ -27,9 +27,6 @@ const SponsorsSection = () => {
   }, {
     name: "Interview Cake",
     logo: interviewCakeLogo
-  }, {
-    name: "HCB",
-    logo: hcbLogo
   }, {
     name: "Jukebox",
     logo: jukeboxLogo
