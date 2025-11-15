@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Trophy, DollarSign, Users, Award } from "lucide-react";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
+import amdLogo from "@/assets/logos/amd-logo.png";
+import googleLogo from "@/assets/logos/google-logo.png";
+import teslaLogo from "@/assets/logos/tesla-logo.png";
 
 const PreviousEditionSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -26,9 +29,9 @@ const PreviousEditionSection = () => {
   ];
 
   const judges = [
-    { company: "AMD", icon: Award },
-    { company: "Tesla", icon: Award },
-    { company: "Google", icon: Award },
+    { company: "AMD", logo: amdLogo },
+    { company: "Tesla", logo: teslaLogo },
+    { company: "Google", logo: googleLogo },
   ];
 
   return (
@@ -88,10 +91,14 @@ const PreviousEditionSection = () => {
             {judges.map((judge, index) => (
               <div
                 key={index}
-                className="bg-foreground rounded-2xl p-8 flex flex-col items-center justify-center hover:scale-105 transition-transform shadow-lg"
+                className="bg-card rounded-2xl p-8 flex flex-col items-center justify-center hover:scale-105 transition-transform shadow-lg border-2 border-border"
               >
-                <judge.icon className="w-12 h-12 text-background mb-4" />
-                <span className="text-background font-bold text-2xl pixel-text">
+                <img 
+                  src={judge.logo} 
+                  alt={judge.company}
+                  className="h-20 object-contain mb-4"
+                />
+                <span className="text-foreground font-bold text-2xl pixel-text">
                   {judge.company}
                 </span>
               </div>
