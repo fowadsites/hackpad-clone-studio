@@ -11,10 +11,8 @@ import CommunitySection from "@/components/CommunitySection";
 import DetailsSection from "@/components/DetailsSection";
 import ScrollNavigation from "@/components/ScrollNavigation";
 import Footer from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <div className="relative">
+  return <div className="relative">
       <ScrollNavigation />
       <HeroSection />
       <VisionSection />
@@ -25,11 +23,9 @@ const Index = () => {
       <SpeakersSection />
       <LearnSection />
       <RulesSection />
-      <CommunitySection />
+      
       <DetailsSection />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
