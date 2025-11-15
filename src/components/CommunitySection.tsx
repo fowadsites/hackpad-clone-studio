@@ -68,7 +68,7 @@ const CommunitySection = () => {
               <a href="#" className="block text-primary underline text-lg font-bold">
                 Discord
               </a>
-              <a href="#" className="block text-muted-foreground underline text-lg">
+              <a href="mailto:hi@buildathon.dev" className="block text-muted-foreground underline text-lg">
                 Email
               </a>
               <a href="#" className="block text-muted-foreground underline text-lg">
