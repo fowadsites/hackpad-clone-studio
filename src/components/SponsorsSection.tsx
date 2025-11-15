@@ -9,6 +9,7 @@ import jukeboxLogo from "@/assets/sponsors/jukebox.png";
 import codecraftersLogo from "@/assets/sponsors/codecrafters.png";
 import unibeeLogo from "@/assets/sponsors/unibee.png";
 import xyzLogo from "@/assets/sponsors/xyz.png";
+import givemycertificateLogo from "@/assets/sponsors/givemycertificate.jpg";
 
 const SponsorsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
@@ -22,6 +23,7 @@ const SponsorsSection = () => {
     { name: "CodeCrafters", logo: codecraftersLogo },
     { name: "UniBee", logo: unibeeLogo },
     { name: ".xyz", logo: xyzLogo },
+    { name: "Givemycertificate", logo: givemycertificateLogo },
   ];
 
   return (
