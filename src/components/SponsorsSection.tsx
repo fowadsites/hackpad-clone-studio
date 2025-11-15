@@ -1,31 +1,27 @@
 import { Button } from "@/components/ui/button";
 import { useScrollAnimation } from "@/hooks/use-scroll-animation";
-import codecraftersLogo from "@/assets/sponsors/codecrafters-logo.png";
-import stackupLogo from "@/assets/sponsors/stackup-logo.png";
-import xyzLogo from "@/assets/sponsors/xyz-logo.png";
-import balsamiqLogo from "@/assets/sponsors/balsamiq-logo.png";
-import aopsLogo from "@/assets/sponsors/aops-logo.png";
-import nordvpnLogo from "@/assets/sponsors/nordvpn-logo.png";
-import sailyLogo from "@/assets/sponsors/saily-logo.png";
-import incogniLogo from "@/assets/sponsors/incogni-logo.png";
-import nordprotectLogo from "@/assets/sponsors/nordprotect-logo.png";
-import nexosLogo from "@/assets/sponsors/nexos-logo.png";
-import nordpassLogo from "@/assets/sponsors/nordpass-logo.png";
+import githubEducationLogo from "@/assets/sponsors/github-education.png";
+import aopsLogo from "@/assets/sponsors/aops.png";
+import balsamiqLogo from "@/assets/sponsors/balsamiq.png";
+import interviewCakeLogo from "@/assets/sponsors/interview-cake.png";
+import hcbLogo from "@/assets/sponsors/hcb.png";
+import jukeboxLogo from "@/assets/sponsors/jukebox.png";
+import codecraftersLogo from "@/assets/sponsors/codecrafters.png";
+import unibeeLogo from "@/assets/sponsors/unibee.png";
+import xyzLogo from "@/assets/sponsors/xyz.png";
 
 const SponsorsSection = () => {
   const { ref, isVisible } = useScrollAnimation();
   const sponsors = [
-    { name: "CodeCrafters.io", logo: codecraftersLogo },
-    { name: "Stackup", logo: stackupLogo },
-    { name: ".xyz", logo: xyzLogo },
-    { name: "Balsamiq", logo: balsamiqLogo },
+    { name: "GitHub Education", logo: githubEducationLogo },
     { name: "AoPS", logo: aopsLogo },
-    { name: "NordVPN", logo: nordvpnLogo },
-    { name: "Saily", logo: sailyLogo },
-    { name: "Incogni", logo: incogniLogo },
-    { name: "NordProtect", logo: nordprotectLogo },
-    { name: "Nexos.ai", logo: nexosLogo },
-    { name: "NordPass", logo: nordpassLogo },
+    { name: "Balsamiq", logo: balsamiqLogo },
+    { name: "Interview Cake", logo: interviewCakeLogo },
+    { name: "HCB", logo: hcbLogo },
+    { name: "Jukebox", logo: jukeboxLogo },
+    { name: "CodeCrafters", logo: codecraftersLogo },
+    { name: "UniBee", logo: unibeeLogo },
+    { name: ".xyz", logo: xyzLogo },
   ];
 
   return (
