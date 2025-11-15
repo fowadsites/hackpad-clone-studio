@@ -2,15 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Rocket } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
 import CTAButtons from "./CTAButtons";
-
 const HeroSection = () => {
-  return (
-    <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
+  return <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-32 h-32 bg-primary/10 rounded-full blur-3xl animate-pulse"></div>
-        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-primary/5 rounded-full blur-2xl animate-pulse" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-secondary/10 rounded-full blur-3xl animate-pulse" style={{
+        animationDelay: '1s'
+      }}></div>
+        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-primary/5 rounded-full blur-2xl animate-pulse" style={{
+        animationDelay: '2s'
+      }}></div>
       </div>
 
       <div className="max-w-6xl w-full relative z-10">
@@ -47,9 +49,9 @@ const HeroSection = () => {
             <span>48 hours</span>
             <span>•</span>
             <span>Virtual</span>
-            <span className="text-primary font-bold">Register</span>
-            <span className="text-secondary font-bold">Discord</span>
-            <span className="text-primary font-bold">Sponsor</span>
+            
+            
+            
             <span>•</span>
             <span>No/low/all-code</span>
           </div>
@@ -60,8 +62,6 @@ const HeroSection = () => {
           <CTAButtons />
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
