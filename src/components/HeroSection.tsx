@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { Rocket } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
 import CTAButtons from "./CTAButtons";
+import buildathonLogo from "@/assets/buildathon-logo.png";
 const HeroSection = () => {
   return <section id="hero" className="min-h-screen flex flex-col items-center justify-center px-4 py-20 relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -16,9 +16,9 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-6xl w-full relative z-10">
-        {/* Rocket Icon Animation */}
+        {/* Logo */}
         <div className="mb-8 flex justify-center">
-          <Rocket className="w-20 h-20 text-primary animate-bounce" />
+          <img src={buildathonLogo} alt="Build-a-thon Logo" className="w-20 h-20" />
         </div>
 
         {/* Main Title */}
