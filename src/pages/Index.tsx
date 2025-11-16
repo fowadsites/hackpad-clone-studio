@@ -11,8 +11,10 @@ import CommunitySection from "@/components/CommunitySection";
 import DetailsSection from "@/components/DetailsSection";
 import ScrollNavigation from "@/components/ScrollNavigation";
 import Footer from "@/components/Footer";
+import ParticleBackground from "@/components/ParticleBackground";
 const Index = () => {
   return <div className="relative">
+      <ParticleBackground />
       <ScrollNavigation />
       <HeroSection />
       <VisionSection />
