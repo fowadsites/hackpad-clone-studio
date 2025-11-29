@@ -34,7 +34,7 @@ const ScheduleSection = () => {
         </h2>
 
         <p className="text-center text-2xl text-primary pixel-text mb-12 font-bold">
-          DETAILED SCHEDULE TO BE ANNOUNCED SOON 🗓️
+          DETAILED SCHEDULE TO BE ANNOUNCED SOON 
         </p>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
