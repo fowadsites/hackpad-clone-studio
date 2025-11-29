@@ -51,7 +51,7 @@ const PreviousEditionSection = () => {
       <div className="max-w-6xl w-full relative z-10">
         <div className="text-center mb-12">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 pixel-text text-foreground">
-            PREVIOUS EDITION 🎯
+            PREVIOUS EDITION 
           </h2>
           <p className="text-xl md:text-2xl text-muted-foreground">
             Our first Build-a-thon was a massive success!
@@ -91,7 +91,7 @@ const PreviousEditionSection = () => {
 
         <div className="text-center">
           <p className="text-xl text-primary pixel-text font-bold mb-8">
-            JOIN US FOR AN EVEN BIGGER EVENT IN 2026! 🚀
+            JOIN US FOR AN EVEN BIGGER EVENT IN 2026! 
           </p>
           
         </div>
