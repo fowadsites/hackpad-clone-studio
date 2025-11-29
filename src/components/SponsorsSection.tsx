@@ -58,7 +58,7 @@ const SponsorsSection = () => {
           SPONSORS
         </h2>
         <p className="text-center text-xl text-muted-foreground mb-12">
-          Thank you to our amazing partners who make Student Hackpad possible 💜
+          Thank you to our amazing partners who make Student Hackpad possible 
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mb-12">
