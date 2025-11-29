@@ -25,7 +25,7 @@ const VisionSection = () => {
         </h2>
         <p className="text-2xl md:text-3xl leading-relaxed mb-12 text-primary pixel-text font-bold">
           FOR MANY PARTICIPANTS, THIS WILL BE THEIR FIRST TIME BUILDING SOMETHING REAL. AND THAT'S
-          EXACTLY THE POINT. WE WANT YOUR FIRST INNOVATIVE EXPERIENCE TO BE THE BEST ONE 💙!
+          EXACTLY THE POINT. WE WANT YOUR FIRST INNOVATIVE EXPERIENCE TO BE THE BEST ONE!
           EVEN IF YOU'RE A SEASONED BUILDER, THERE'S LITERALLY NOTHING TO LOSE AND A LOT TO WIN!
         </p>
         
