@@ -22,7 +22,7 @@ const ThemeSection = () => {
           THEME
         </h2>
         <p className="text-2xl md:text-3xl leading-relaxed mb-12 text-primary pixel-text font-bold">
-          MAKE TOOLS THAT HELP ___; MORE SPECIFICS BEFORE HACKING STARTS 🤫!
+          MAKE TOOLS THAT HELP ___; MORE SPECIFICS BEFORE HACKING STARTS!
         </p>
         
       </div>
