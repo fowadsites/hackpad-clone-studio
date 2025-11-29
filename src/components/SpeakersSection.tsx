@@ -53,10 +53,10 @@ const SpeakersSection = () => {
       </div>
       <div className="max-w-6xl w-full relative z-10">
         <h2 className="text-5xl md:text-6xl font-bold mb-8 text-center pixel-text text-foreground flex items-center justify-center gap-4">
-          SPEAKERS, MENTORS & JUDGES 🎤
+          SPEAKERS, MENTORS & JUDGES 
         </h2>
         <p className="text-center text-xl text-muted-foreground mb-12">
-          More insane lineup coming soon 🔥
+          More insane lineup coming soon 
         </p>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
